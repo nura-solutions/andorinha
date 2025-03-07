@@ -1,0 +1,34 @@
+
+<resources>
+    <color name="seed">#ff7902</color>
+    <color name="primary">#ff7902</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="primaryContainer">#FFDBC9</color>
+    <color name="onPrimaryContainer">#321200</color>
+    <color name="secondary">#7A5900</color>
+    <color name="onSecondary">#FFFFFF</color>
+    <color name="secondaryContainer">#FFDEA2</color>
+    <color name="onSecondaryContainer">#261900</color>
+    <color name="tertiary">#626033</color>
+    <color name="onTertiary">#FFFFFF</color>
+    <color name="tertiaryContainer">#E9E5AC</color>
+    <color name="onTertiaryContainer">#1D1D00</color>
+    <color name="error">#BA1A1A</color>
+    <color name="errorContainer">#FFDAD6</color>
+    <color name="onError">#FFFFFF</color>
+    <color name="onErrorContainer">#410002</color>
+    <color name="background">#F2FFFD</color>
+    <color name="onBackground">#00201E</color>
+    <color name="surface">#F2FFFD</color>
+    <color name="onSurface">#00201E</color>
+    <color name="surfaceVariant">#F4DED4</color>
+    <color name="onSurfaceVariant">#52443C</color>
+    <color name="outline">#85746B</color>
+    <color name="inverseOnSurface">#B1FFF8</color>
+    <color name="inverseSurface">#003734</color>
+    <color name="inversePrimary">#FFB68C</color>
+    <color name="shadow">#000000</color>
+    <color name="surfaceTint">#9A4600</color>
+    <color name="outlineVariant">#D7C2B8</color>
+    <color name="scrim">#000000</color>
+</resources>
