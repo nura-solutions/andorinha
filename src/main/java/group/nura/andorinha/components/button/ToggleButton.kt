@@ -6,15 +6,15 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Button
 import androidx.compose.foundation.text.BasicText
+import androidx.compose.material3.Button
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import group.nura.andorinha.theme.Dimens
 import group.nura.andorinha.R
+import group.nura.andorinha.theme.Dimens
 
 data class ToggleOption(
     val id: Int,
@@ -39,7 +39,7 @@ fun ToggleButton(options: List<ToggleOption>, onSelected: (ToggleOption) -> Unit
             )
 
             if (index != options.lastIndex) {
-                Spacer(modifier = Modifier.width(Dimens.Medium_100))
+                Spacer(modifier = Modifier.width(Dimens.Spacing.Medium))
             }
         }
     }
@@ -70,7 +70,10 @@ private fun BaseToggleButton(
 fun PreviewSwitchButton() {
     Column() {
         ToggleButton(
-            listOf(ToggleOption(0, R.string.app_name, false), ToggleOption(1, androidx.appcompat.R.string.abc_action_bar_home_description, true))
+            listOf(
+                ToggleOption(0, R.string.app_name, false),
+                ToggleOption(1, androidx.appcompat.R.string.abc_action_bar_home_description, true)
+            )
         ) {
 
         }

@@ -7,8 +7,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.dp
 import group.nura.andorinha.components.icon.Icon
+import group.nura.andorinha.theme.Dimens
 
 @Composable
 fun NavIcon(resId: Int, isHighlighted: Boolean) {
@@ -17,7 +17,7 @@ fun NavIcon(resId: Int, isHighlighted: Boolean) {
         resId = resId,
         tint = color,
         modifier = Modifier
-            .height(if (isHighlighted) 48.dp else 24.dp)
+            .height(if (isHighlighted) Dimens.Icon.xl else Dimens.Icon.md)
             .aspectRatio(1f)
             .clipToBounds()
     )

@@ -46,11 +46,11 @@ fun RowScope.NavigationItem(
                         MaterialTheme.colorScheme.onSurface
                     background(
                         color = color,
-                        shape = RoundedCornerShape(50)
+                        shape = RoundedCornerShape(Dimens.CornerRadius.full)
                     )
                         .padding(
-                            horizontal = Dimens.Medium_150,
-                            vertical = Dimens.XSmall_100
+                            horizontal = Dimens.Spacing.XMedium,
+                            vertical = Dimens.Spacing.XSmall
                         )
                 },
                 horizontalAlignment = Alignment.CenterHorizontally,
@@ -60,7 +60,7 @@ fun RowScope.NavigationItem(
                     route.isHighlighted
                 )
                 if (!route.isHighlighted) {
-                    Spacer(modifier = Modifier.height(Dimens.Small_100))
+                    Spacer(modifier = Modifier.height(Dimens.Spacing.Small))
                     SelectedMarker(isSelected)
                 }
             }

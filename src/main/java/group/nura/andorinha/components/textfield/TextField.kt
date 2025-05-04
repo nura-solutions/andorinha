@@ -100,16 +100,12 @@ fun SelectableTextField(
     label: String,
     onClick: () -> Unit,
 ) {
-//    val colors = OutlinedTextFieldDefaults
-//        .localOutlinedTextFieldColors()
-
     BaseTextField(
         modifier = Modifier,
         value = value,
         label = label,
         enabled = false,
         readOnly = true,
-//        colors = colors,
         onClick = onClick,
         onValueChange = { }
     )
@@ -139,7 +135,7 @@ private fun BaseTextField(
                 style = MaterialTheme.typography.labelLarge
             )
         }
-        Spacer(modifier = Modifier.height(Dimens.Small_100))
+        Spacer(modifier = Modifier.height(Dimens.Spacing.Small))
         val buttonShape = RoundedCornerShape(12.dp)
 
         var txtFieldModifier = modifier
@@ -175,7 +171,7 @@ private fun BaseTextField(
                 unfocusedContainerColor = MaterialTheme.colorScheme.background,
             )
         )
-        Spacer(modifier = Modifier.height(Dimens.XSmall_100))
+        Spacer(modifier = Modifier.height(Dimens.Spacing.XSmall))
 
         supportingText?.invoke()
     }

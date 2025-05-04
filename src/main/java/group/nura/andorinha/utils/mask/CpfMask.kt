@@ -1,10 +1,10 @@
-package group.nura.andorinha.utils.mask;
+package group.nura.andorinha.utils.mask
 
 import androidx.compose.ui.text.input.OffsetMapping
 
 class CpfMask : MaskTransformation("###.###.###-##") {
     override val offsetTranslator: OffsetMapping
-        get() =  object : OffsetMapping {
+        get() = object : OffsetMapping {
             override fun originalToTransformed(offset: Int): Int {
                 if (offset <= 3) return offset
                 if (offset <= 6) return offset + 1

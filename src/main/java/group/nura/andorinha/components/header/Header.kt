@@ -9,8 +9,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.text.BasicText
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
-import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -72,23 +72,23 @@ fun HeaderLarge(
                     color = MaterialTheme.colorScheme.surface
                 )
                 .padding(
-                    top = Dimens.Medium_150,
-                    end = Dimens.Medium_100,
-                    bottom = Dimens.Medium_100,
-                    start = Dimens.Medium_100
+                    top = Dimens.Spacing.XMedium,
+                    end = Dimens.Spacing.Medium,
+                    bottom = Dimens.Spacing.Medium,
+                    start = Dimens.Spacing.Medium
                 )
         ) {
             navigationIcon()
             Text(
-                modifier = Modifier.padding(horizontal = Dimens.Medium_100),
+                modifier = Modifier.padding(horizontal = Dimens.Spacing.Medium),
                 text = title,
                 style = MaterialTheme.typography.headlineLarge.copy(
                     color = MaterialTheme.colorScheme.onSurface
                 ),
             )
         }
-        Divider(
-            thickness = 1.dp,
+        HorizontalDivider(
+            thickness = Dimens.Divider.thickness,
             modifier = Modifier.shadow(1.dp),
             color = MaterialTheme.colorScheme.onSurfaceVariant.copy(
                 alpha = 0.1f

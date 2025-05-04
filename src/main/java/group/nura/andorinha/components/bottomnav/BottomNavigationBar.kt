@@ -3,10 +3,10 @@ package group.nura.andorinha.components.bottomnav
 import androidx.compose.material3.NavigationBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import group.nura.andorinha.R
+import group.nura.andorinha.theme.Dimens
 
 @Composable
 fun BottomNavigationBar(
@@ -15,7 +15,7 @@ fun BottomNavigationBar(
     routes: List<NavRoute>
 ) {
     NavigationBar(
-        tonalElevation = 0.dp,
+        tonalElevation = Dimens.Elevation.none,
         content = {
             routes.map {
                 NavigationItem(navController, currentDestination, it)

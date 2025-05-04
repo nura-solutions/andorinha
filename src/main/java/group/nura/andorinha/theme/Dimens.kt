@@ -3,20 +3,166 @@ package group.nura.andorinha.theme
 import androidx.compose.ui.unit.dp
 
 object Dimens {
-    val XSmall_100 = 4.dp
-    val Small_100 = 8.dp
-    val Small_150 = 12.dp
-    val Medium_100 = 16.dp
-    val Medium_150 = 24.dp
-    val Large_100 = 32.dp
-    val Large_125 = 40.dp
-    val Large_150 = 48.dp
-    val XLarge_100 = 64.dp
+    /** Grid defaults to 8dp **/
+    val Grid = 8.dp
 
-    val IconButtonSize = Large_100
-    val PrimaryButtonVerticalPadding = Medium_100
-    val PrimaryButtonHorizontalPadding = Medium_150
+    object Spacing {
 
-    val SecondaryButtonVerticalPadding = Medium_100
-    val SecondaryButtonHorizontalPadding = Medium_150
+        /**
+         * [Grid] / 2 = 4dp (Default)
+         **/
+        val XSmall = Grid / 2
+
+        /**
+         * [Grid] = 8dp (Default)
+         **/
+        val Small = Grid
+
+        /**
+         * [Grid] * 2 = 16dp (Default)
+         **/
+        val Medium = Small * 2
+
+        /**
+         * [Grid] * 3 = 24dp (Default)
+         **/
+        val XMedium = Grid * 3
+
+        /**
+         * [Grid] * 4 = 32dp (Default)
+         **/
+        val Large = Grid * 4
+
+        /**
+         * [Grid] * 6 = 48dp (Default)
+         **/
+        val XLarge = Grid * 6
+    }
+
+    object Icon {
+        /**
+         * [Grid] * 2 = 16.dp
+         * Ícones muito pequenos: chips, campos de texto, indicadores sutis
+         */
+        val xs = Grid * 2
+
+        /**
+         * [Grid] * 2.5 = 20.dp
+         * Ícones menores: menus compactos, elementos auxiliares
+         */
+        val sm = Grid * 2.5f
+
+        /**
+         * [Grid] * 3 = 24.dp
+         * ✅ Tamanho padrão: botões, AppBar, listas
+         */
+        val md = Grid * 3
+
+        /**
+         * [Grid] * 4 = 32.dp
+         * Ícones maiores em cards, destaques visuais
+         */
+        val lg = Grid * 4
+
+        /**
+         * [Grid] * 5 = 40.dp
+         * Ícones grandes: AppBars expandidas, áreas proeminentes
+         */
+        val xl = Grid * 5
+
+        /**
+         * [Grid] * 6 = 48.dp
+         * Ícones em botões grandes: FAB, navegação, ações principais
+         */
+        val xxl = Grid * 6
+    }
+
+    object CornerRadius {
+        val none = 0.dp
+
+        /**
+         * [Grid] / 2 = 4.dp
+         */
+        val sm = Grid / 2
+
+        /**
+         * [Grid] = 8.dp
+         */
+        val md = Grid
+
+        /**
+         * [Grid] * 2 = 16.dp
+         */
+        val lg = Grid * 2
+
+        /**
+         * [Grid] * 3 = 24.dp
+         */
+        val xlg = Grid * 3
+
+        /**
+         * [Grid] * 6 = 48.dp
+         * Circular
+         */
+        val full = Grid * 6
+    }
+
+    object Stroke {
+        val hairline = 0.5.dp
+        val thin = 1.dp
+        val regular = 2.dp
+        val thick = 4.dp
+    }
+
+    object Elevation {
+        val none = 0.dp
+        val sm = 1.dp
+        val md = 4.dp
+        val lg = 8.dp
+        val xl = 16.dp
+    }
+
+    object Inset {
+        /**
+         * [Grid] * 2 = 16.dp
+         */
+        val horizontal = Grid * 2
+
+        /**
+         * [Grid] * 2 = 16.dp
+         */
+        val vertical = Grid * 2
+
+        /**
+         * [Grid] * 3 = 24.dp
+         */
+        val screenPadding = Grid * 3
+    }
+
+    object Divider {
+        val thickness = 1.dp
+
+        /**
+         * [Grid]
+         */
+        val spacing = Grid
+    }
+
+    object AvatarSize {
+
+        /**
+         * [Grid] * 3 = 24.dp
+         */
+        val sm = Grid * 3
+
+        /**
+         * [Grid] * 5 = 40.dp
+         */
+        val md = Grid * 5
+
+        /**
+         * [Grid] * 8 = 64.dp
+         */
+        val lg = Grid * 8
+    }
 }

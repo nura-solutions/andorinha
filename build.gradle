@@ -6,13 +6,11 @@ plugins {
 
 android {
     namespace 'group.nura.andorinha'
-    compileSdk 33
+    compileSdk 35
 
     defaultConfig {
         minSdk 26
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        targetSdk 35
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

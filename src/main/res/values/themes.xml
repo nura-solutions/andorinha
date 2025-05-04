@@ -1,22 +1,22 @@
-
 <resources>
+
     <style name="Theme.Andorinha" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <item name="colorPrimary">@@color/primary</item>
-        <item name="colorOnPrimary">@@color/onPrimary</item>
-        <item name="colorSecondary">@@color/secondary</item>
-        <item name="colorOnSecondary">@@color/onSecondary</item>
-        <item name="colorError">@@color/error</item>
-        <item name="colorOnError">@@color/onError</item>
-        <item name="android:colorBackground">@@color/background</item>
-        <item name="colorOnBackground">@@color/onBackground</item>
-        <item name="colorSurface">@@color/surface</item>
-        <item name="colorOnSurface">@@color/onSurface</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/onError</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/onBackground</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <!-- Set the splash screen background, animated icon, and animation duration. -->
-        <item name="windowSplashScreenBackground">@@color/primary</item>
+        <item name="windowSplashScreenBackground">@color/primary</item>
 
         <!-- Use windowSplashScreenAnimatedIcon to add either a drawable or an
              animated drawable. One of these is required. -->
