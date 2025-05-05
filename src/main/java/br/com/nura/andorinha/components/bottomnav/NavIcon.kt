@@ -1,0 +1,24 @@
+package br.com.nura.andorinha.components.bottomnav
+
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.height
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clipToBounds
+import androidx.compose.ui.graphics.Color
+import br.com.nura.andorinha.components.icon.Icon
+import br.com.nura.andorinha.theme.Dimens
+
+@Composable
+fun NavIcon(resId: Int, isHighlighted: Boolean) {
+    val color = if (isHighlighted) MaterialTheme.colorScheme.surface else Color.Unspecified
+    Icon(
+        resId = resId,
+        tint = color,
+        modifier = Modifier
+            .height(if (isHighlighted) Dimens.Icon.xl else Dimens.Icon.md)
+            .aspectRatio(1f)
+            .clipToBounds()
+    )
+}
