@@ -1,7 +1,7 @@
 package br.com.nura.andorinha.components.scaffold
 
 import android.annotation.SuppressLint
-import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
@@ -69,7 +69,7 @@ fun SafeAreaScaffold(
         bottomBar = bottomBar,
         floatingActionButton = floatingActionButton,
         content = {
-            Column(modifier.padding(combinedPadding)) {
+            Box(modifier.padding(combinedPadding)) {
                 content(combinedPadding)
             }
         }
