@@ -77,6 +77,44 @@ object Dimens {
         val xxl = Grid * 6
     }
 
+    object Image {
+        /**
+         * [Grid] * 4 = 32.dp
+         * Ícones muito pequenos: chips, campos de texto, indicadores sutis
+         */
+        val xs = Grid * 4
+
+        /**
+         * [Grid] * 8 = 64.dp
+         * Ícones menores: menus compactos, elementos auxiliares
+         */
+        val sm = Grid * 8
+
+        /**
+         * [Grid] * 12 = 96.dp
+         * ✅ Tamanho padrão: botões, AppBar, listas
+         */
+        val md = Grid * 12
+
+        /**
+         * [Grid] * 16 = 128.dp
+         * Ícones maiores em cards, destaques visuais
+         */
+        val lg = Grid * 16
+
+        /**
+         * [Grid] * 24 = 192.dp
+         * Ícones grandes: AppBars expandidas, áreas proeminentes
+         */
+        val xl = Grid * 24
+
+        /**
+         * [Grid] * 32 = 256.dp
+         * Ícones em botões grandes: FAB, navegação, ações principais
+         */
+        val xxl = Grid * 32
+    }
+
     object CornerRadius {
         val none = 0.dp
 

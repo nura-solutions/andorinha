@@ -10,7 +10,7 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
-import br.com.nura.andorinha.components.scaffold.SafeAreaScaffold
+import br.com.nura.andorinha.composition.scaffold.SafeAreaScaffold
 
 val lightColors = DesignColor(
     primary = Color(0xFFE35407),
