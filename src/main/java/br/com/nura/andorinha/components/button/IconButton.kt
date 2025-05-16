@@ -15,7 +15,7 @@ import br.com.nura.andorinha.theme.Dimens
 @Composable
 fun IconButton(@DrawableRes icon: Int, onClick: () -> Unit) {
     androidx.compose.material3.IconButton(
-        modifier = Modifier.size(Dimens.Icon.md),
+        modifier = Modifier.size(Dimens.Icon.Medium),
         onClick = onClick
     ) {
         Icon(

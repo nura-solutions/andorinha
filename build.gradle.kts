@@ -37,7 +37,7 @@ android {
 
 dependencies {
     implementation(libs.bundles.core)
-    implementation(libs.bundles.androidx)
+    implementation(libs.bundles.android)
     implementation(libs.bundles.compose)
     implementation(libs.bundles.navigation)
     implementation(platform(libs.composeBom))

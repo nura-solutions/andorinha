@@ -32,7 +32,7 @@ fun RoundedButton(
     Button(
         modifier = modifier,
         elevation = ButtonDefaults.elevation(Dimens.Elevation.md),
-        shape = RoundedCornerShape(Dimens.CornerRadius.xlg),
+        shape = RoundedCornerShape(Dimens.CornerRadius.XLarge),
         colors = colors,
         onClick = onClick
     ) {

@@ -44,37 +44,37 @@ object Dimens {
          * [Grid] * 2 = 16.dp
          * Ícones muito pequenos: chips, campos de texto, indicadores sutis
          */
-        val xs = Grid * 2
+        val XSmall = Grid * 2
 
         /**
          * [Grid] * 2.5 = 20.dp
          * Ícones menores: menus compactos, elementos auxiliares
          */
-        val sm = Grid * 2.5f
+        val Small = Grid * 2.5f
 
         /**
          * [Grid] * 3 = 24.dp
          * ✅ Tamanho padrão: botões, AppBar, listas
          */
-        val md = Grid * 3
+        val Medium = Grid * 3
 
         /**
          * [Grid] * 4 = 32.dp
          * Ícones maiores em cards, destaques visuais
          */
-        val lg = Grid * 4
+        val Large = Grid * 4
 
         /**
          * [Grid] * 5 = 40.dp
          * Ícones grandes: AppBars expandidas, áreas proeminentes
          */
-        val xl = Grid * 5
+        val XLarge = Grid * 5
 
         /**
          * [Grid] * 6 = 48.dp
          * Ícones em botões grandes: FAB, navegação, ações principais
          */
-        val xxl = Grid * 6
+        val XXLarge = Grid * 6
     }
 
     object Image {
@@ -82,37 +82,37 @@ object Dimens {
          * [Grid] * 4 = 32.dp
          * Ícones muito pequenos: chips, campos de texto, indicadores sutis
          */
-        val xs = Grid * 4
+        val XSmall = Grid * 4
 
         /**
          * [Grid] * 8 = 64.dp
          * Ícones menores: menus compactos, elementos auxiliares
          */
-        val sm = Grid * 8
+        val Small = Grid * 8
 
         /**
          * [Grid] * 12 = 96.dp
          * ✅ Tamanho padrão: botões, AppBar, listas
          */
-        val md = Grid * 12
+        val Medium = Grid * 12
 
         /**
          * [Grid] * 16 = 128.dp
          * Ícones maiores em cards, destaques visuais
          */
-        val lg = Grid * 16
+        val Large = Grid * 16
 
         /**
          * [Grid] * 24 = 192.dp
          * Ícones grandes: AppBars expandidas, áreas proeminentes
          */
-        val xl = Grid * 24
+        val XLarge = Grid * 24
 
         /**
          * [Grid] * 32 = 256.dp
          * Ícones em botões grandes: FAB, navegação, ações principais
          */
-        val xxl = Grid * 32
+        val XXLarge = Grid * 32
     }
 
     object CornerRadius {
@@ -121,28 +121,28 @@ object Dimens {
         /**
          * [Grid] / 2 = 4.dp
          */
-        val sm = Grid / 2
+        val Small = Grid / 2
 
         /**
          * [Grid] = 8.dp
          */
-        val md = Grid
+        val Medium = Grid
 
         /**
          * [Grid] * 2 = 16.dp
          */
-        val lg = Grid * 2
+        val Large = Grid * 2
 
         /**
          * [Grid] * 3 = 24.dp
          */
-        val xlg = Grid * 3
+        val XLarge = Grid * 3
 
         /**
          * [Grid] * 6 = 48.dp
          * Circular
          */
-        val full = Grid * 6
+        val Full = Grid * 6
     }
 
     object Stroke {

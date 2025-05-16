@@ -17,7 +17,7 @@ fun NavIcon(resId: Int, isHighlighted: Boolean) {
         resId = resId,
         tint = color,
         modifier = Modifier
-            .height(if (isHighlighted) Dimens.Icon.xl else Dimens.Icon.md)
+            .height(if (isHighlighted) Dimens.Icon.XLarge else Dimens.Icon.Medium)
             .aspectRatio(1f)
             .clipToBounds()
     )

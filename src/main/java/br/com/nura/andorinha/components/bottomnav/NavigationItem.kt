@@ -46,7 +46,7 @@ fun RowScope.NavigationItem(
                         MaterialTheme.colorScheme.onSurface
                     background(
                         color = color,
-                        shape = RoundedCornerShape(Dimens.CornerRadius.full)
+                        shape = RoundedCornerShape(Dimens.CornerRadius.Full)
                     )
                         .padding(
                             horizontal = Dimens.Spacing.XMedium,

@@ -34,7 +34,7 @@ fun PrimaryButton(
             disabledContainerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.5f),
             disabledContentColor = MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.5f)
         ),
-        shape = RoundedCornerShape(Dimens.CornerRadius.md),
+        shape = RoundedCornerShape(Dimens.CornerRadius.Medium),
         onClick = onClick
     ) {
         BasicText(text = text)

@@ -21,7 +21,7 @@ fun SecondaryButton(
         modifier = modifier
             .fillMaxWidth()
             .height(ComponentSpecs.Button.height),
-        shape = RoundedCornerShape(Dimens.CornerRadius.md),
+        shape = RoundedCornerShape(Dimens.CornerRadius.Medium),
         onClick = onClick
     ) {
         BasicText(

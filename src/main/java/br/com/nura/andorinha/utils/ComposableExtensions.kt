@@ -15,7 +15,9 @@ import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.unit.Dp
+import br.com.nura.andorinha.theme.LocalAppColors
 
 @Composable
 fun ButtonDefaults.elevation(elevation: Dp): ButtonElevation {
@@ -64,4 +66,9 @@ fun Modifier.shimmerLoading(
             )
         )
     }
+}
+
+@Composable
+fun getContrastingTextColor(background: Color): Color {
+    return if (background.luminance() > 0.5f) LocalAppColors.current.onLightBackground else LocalAppColors.current.onDarkBackground
 }

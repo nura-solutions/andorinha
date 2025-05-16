@@ -9,6 +9,8 @@ data class DesignColor(
     val onSecondary: Color,
     val background: Color,
     val onBackground: Color,
+    val onDarkBackground: Color,
+    val onLightBackground: Color,
     val surface: Color,
     val onSurface: Color,
     val accent: Color,

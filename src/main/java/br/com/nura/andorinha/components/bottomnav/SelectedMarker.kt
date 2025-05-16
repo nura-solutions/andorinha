@@ -15,7 +15,7 @@ import br.com.nura.andorinha.theme.Dimens
 fun SelectedMarker(selected: Boolean) {
     Box(
         modifier = Modifier
-            .width(Dimens.Icon.lg)
+            .width(Dimens.Icon.Large)
             .height(2.dp)
             .alpha(if (selected) 0.6f else 0.0f)
             .background(MaterialTheme.colorScheme.onSurface)
